@@ -1,0 +1,23 @@
+{
+  "name": "QueueSong",
+  "namespace": "com.dc.kafka.avro.audio",
+  "type": "record",
+  "fields": [
+    {
+      "name": "song",
+      "type": "string"
+    },
+    {
+      "name": "artist",
+      "type": "string"
+    },
+    {
+      "name": "order",
+      "type": {
+        "name": "Order",
+        "type": "enum",
+        "symbols" : ["FIRST", "LAST"]
+      }
+    }
+  ]
+}

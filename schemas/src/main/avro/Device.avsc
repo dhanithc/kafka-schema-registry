@@ -1,0 +1,24 @@
+{
+  "name": "Device",
+  "namespace": "com.dc.kafka.avro.audio",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "location",
+      "type": "string"
+    },
+    {
+      "name": "level",
+      "type": "int",
+      "default": 8
+    }
+  ]
+}

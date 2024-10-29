@@ -1,0 +1,33 @@
+{
+  "name": "Audit",
+  "namespace": "com.dc.kafka.avro.btlnse",
+  "type": "record",
+  "fields": [
+    {
+      "name": "companyId",
+      "type": "string"
+    },
+    {
+      "name": "eventCreationTime",
+      "type": "string"
+    },
+    {
+      "name":"inputterList",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "eventId",
+      "type": "string"
+    },
+    {
+      "name":"dateTimeList",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}

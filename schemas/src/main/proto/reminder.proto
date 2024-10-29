@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_outer_classname = "ReminderProto";
+option java_package = "com.dc.kafka.proto";
+
+message Reminder {
+    int32 id1 = 1;
+    string event = 2;
+    string date = 3;
+    string time = 4;
+    bool recurring = 5;
+    bool test = 6;
+}

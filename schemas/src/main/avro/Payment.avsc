@@ -1,0 +1,41 @@
+{
+  "name": "Payment",
+  "namespace": "com.dc.kafka.avro.btlnse",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "currNo",
+      "type": "long"
+    },
+    {
+      "name": "companyCode",
+      "type": "string"
+    },
+    {
+      "name": "BU",
+      "type": "string"
+    },
+    {
+      "name": "audit",
+      "type": "Audit"
+    },
+    {
+      "name": "countryCode",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "testOptionalField",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "testRequiredField",
+      "type": "string"
+    }
+  ]
+}

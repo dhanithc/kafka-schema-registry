@@ -1,0 +1,23 @@
+{
+  "name": "PlaySong",
+  "namespace": "com.dc.kafka.avro.audio",
+  "type": "record",
+  "fields": [
+    {
+      "name": "song",
+      "type": "string"
+    },
+    {
+      "name": "artist",
+      "type": "string"
+    },
+    {
+      "name": "action",
+      "type": {
+        "name": "Action",
+        "type": "enum",
+        "symbols" : ["PLAY", "STOP", "PAUSE", "RESUME"]
+      }
+    }
+  ]
+}
